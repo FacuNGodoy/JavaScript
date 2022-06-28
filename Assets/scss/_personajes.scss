@@ -1,0 +1,97 @@
+@import "./variables";
+
+.PJcarac{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 20px 0px 200px;
+    flex-wrap: wrap;
+}
+.nombrePJ{
+   font-family: "valorant";
+   color: white;
+    font-size: 60px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.PJbio{
+   color:white;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+   h5{
+      font-size: 40px;
+   }
+}
+.personajes{
+    display: flex;
+    flex-direction: column;
+}
+.pj{
+    position: sticky;
+    top:180px;
+}
+.pjlist{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    ul{
+        list-style: none;
+        color: white;
+        font-family: "valorant";
+        font-size: 20px;
+        border-style: double;
+        padding: 10px;
+        margin: 20px;
+        transition: 1s;
+    }
+    ul li{
+        padding: 20px 0px;
+    }
+    ul li a{
+        text-decoration: none;
+        color:white;
+    }
+    li:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+}
+.lineabiohab{
+    color:white;
+    margin: 0px 20px 0px 200px;
+}
+.lineahabhab{
+    color:white;
+    margin: 0px 100px 0px 270px;
+}
+.habs{
+    display: flex;
+    flex-direction: column;
+    .hab1{
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin:40px 200px;
+    }
+    .habexp{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 50%;
+    }
+    .vidhab1{
+        width: 40%;
+    }
+}
+

@@ -1,0 +1,16 @@
+@media (min-width:768px){
+    .menuMd{
+        height: 350px;
+        overflow: hidden;
+    }
+    .menuMd img{
+        display: none;
+    }
+    .video_ocultarSm{
+        display: flex;
+        width: 100%;
+    }
+    .navbar{
+        font-size: 24px;
+    }
+}

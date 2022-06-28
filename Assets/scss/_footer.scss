@@ -1,0 +1,49 @@
+@import "_variables.scss";
+
+.pie {
+    background-color: rgb(2, 33, 54) ;
+    color: $colorLetra;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    h3{
+        font-size: 30px;
+        letter-spacing: 0.8px;
+        word-spacing: 0px;
+        font-weight: 700;
+        text-decoration: underline solid rgb(224, 224, 224);
+        font-style: italic;
+        font-variant: small-caps;
+        text-transform: none;
+    }
+    .seccionRedes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .texto_redes{
+        margin: 2px;
+        font-size: x-large;
+    }
+    .seccionRedes a{
+        padding: 2px;
+    }
+}
+
+
+.seccion_link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.seccion_link:hover{
+    color: #ee6c73;
+}
+

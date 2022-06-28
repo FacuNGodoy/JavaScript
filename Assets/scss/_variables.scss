@@ -1,0 +1,10 @@
+$colorPrimario : rgb(18,24,38);
+$colorLetra : white;
+@font-face {
+    font-family: "valorant";
+    src: url(../fonts/Valorant_Font.ttf);
+}
+$menudesk:(
+    altura: 600px,
+    overflow: hidden,
+)

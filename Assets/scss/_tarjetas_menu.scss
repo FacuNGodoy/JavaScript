@@ -1,0 +1,32 @@
+.menuTarjetas{
+    width:300px;
+    border-style: groove;
+    border-color: rgb(228, 221, 221);
+    border-width: 5px;
+    transition: 2s;
+    padding: 0;
+    background: -moz-linear-gradient(top, #121826 0%, #121826 65%, #D0344D 100%);
+    background: -webkit-linear-gradient(top, #121826 0%, #121826 65%, #D0344D 100%);
+    background: linear-gradient(to bottom, #121826 0%, #121826 65%, #D0344D 100%);
+    p{
+        color:rgb(255, 255, 255);
+    }
+}
+.menuTarjetas:hover{
+    transform: scale(1.04);
+}
+.Character_name{
+    font-family: "valorant";
+    color:white;
+    font-size: 30px;
+}
+.line{
+    text-decoration: none;
+}
+.secciones{
+    width: 100%;
+}
+.comprar{
+    padding:5px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "valorant";
+  src: url(../fonts/Valorant_Font.ttf);
+}
+
+@font-face {
+  font-family: "valorant";
+  src: url(../fonts/Valorant_Font.ttf);
+}
+
+.navbar {
+  background-color: #121826 !important;
+  color: white;
+}
+
+.navbar .navbar-nav {
+  font-family: "valorant";
+  color: white;
+}
+
+.presentacion {
+  color: black;
+  font-size: 18px;
+  background-color: white;
+  padding: 30px 60px;
+  border-radius: 30px;
+}
+
+.presentacion .desc {
+  margin-top: 2px;
+  padding-bottom: 150px;
+}
+
+.contactmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.669);
+  height: 700px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contacto {
+  background-image: url("../img/Agentes-min.png");
+}
+
+.presentacion form label {
+  padding: 5px;
+}
+
+.presentacion form input {
+  margin: 5px;
+  padding: 5px;
+}
+
+textarea {
+  width: 260px;
+  height: 200px;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+.contenedor {
+  background-color: #121826;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "valorant";
+  src: url(../fonts/Valorant_Font.ttf);
+}
+
+.pie {
+  background-color: #022136 !important;
+  color: white;
+}
+
+.pie h6 {
+  font-size: 12px;
+}
+
+.menuTarjetas {
+  width: 300px;
+  border-style: groove;
+  border-color: #e4dddd;
+  border-width: 5px;
+  transition: 2s;
+  padding: 0;
+  background: linear-gradient(to bottom, #121826 0%, #121826 65%, #D0344D 100%);
+}
+
+.menuTarjetas p {
+  color: white;
+}
+
+.menuTarjetas:hover {
+  transform: scale(1.04);
+}
+
+.Character_name {
+  font-family: "valorant";
+  color: white;
+  font-size: 30px;
+}
+
+.line {
+  text-decoration: none;
+}
+
+.secciones {
+  width: 100%;
+}
+
+.comprar {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.tarjetaTitulo {
+  color: white;
+}
+
+.tarjetaShop {
+  width: 300px;
+  border-style: groove;
+  border-color: #e4dddd;
+  border-width: 5px;
+  transition: 2s;
+  padding: 0;
+  background: linear-gradient(to bottom, #121826 0%, #121826 65%, #D0344D 100%);
+}
+
+.tarjetaShop p {
+  color: white;
+}
+
+.tarjetaShop button {
+  transition: 2s;
+}
+
+.tarjetaShop button:hover {
+  transform: scale(1.04);
+}
+
+.video_ocultarSm {
+  display: none;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+@font-face {
+  font-family: "valorant";
+  src: url(../fonts/Valorant_Font.ttf);
+}
+
+.pie {
+  background-color: #022136;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pie h3 {
+  font-size: 30px;
+  letter-spacing: 0.8px;
+  word-spacing: 0px;
+  font-weight: 700;
+  text-decoration: underline solid #e0e0e0;
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+.pie .seccionRedes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pie .texto_redes {
+  margin: 2px;
+  font-size: x-large;
+}
+
+.pie .seccionRedes a {
+  padding: 2px;
+}
+
+.seccion_link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.seccion_link:hover {
+  color: #ee6c73;
+}
+
+@media (min-width: 768px) {
+  .menuMd {
+    height: 350px;
+    overflow: hidden;
+  }
+  .menuMd img {
+    display: none;
+  }
+  .video_ocultarSm {
+    display: flex;
+    width: 100%;
+  }
+  .navbar {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menuMd {
+    height: 600px;
+    overflow: hidden;
+  }
+  .sizeSm {
+    width: 400px;
+  }
+  .menuMd_CH {
+    height: 600px;
+    overflow: hidden;
+  }
+  .menuMd_MP {
+    height: 600px;
+    overflow: hidden;
+  }
+  .menuMd_CT {
+    height: 400px;
+  }
+}
+
+@font-face {
+  font-family: "valorant";
+  src: url(../fonts/Valorant_Font.ttf);
+}
+
+.PJcarac {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 20px 0px 200px;
+  flex-wrap: wrap;
+}
+
+.nombrePJ {
+  font-family: "valorant";
+  color: white;
+  font-size: 60px;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.PJbio {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.PJbio h5 {
+  font-size: 40px;
+}
+
+.personajes {
+  display: flex;
+  flex-direction: column;
+}
+
+.pj {
+  position: sticky;
+  top: 180px;
+}
+
+.pjlist {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 200px;
+}
+
+.pjlist ul {
+  list-style: none;
+  color: white;
+  font-family: "valorant";
+  font-size: 20px;
+  border-style: double;
+  padding: 10px;
+  margin: 20px;
+  transition: 1s;
+}
+
+.pjlist ul li {
+  padding: 20px 0px;
+}
+
+.pjlist ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.pjlist li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lineabiohab {
+  color: white;
+  margin: 0px 20px 0px 200px;
+}
+
+.lineahabhab {
+  color: white;
+  margin: 0px 100px 0px 270px;
+}
+
+.habs {
+  display: flex;
+  flex-direction: column;
+}
+
+.habs .hab1 {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 200px;
+}
+
+.habs .habexp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.habs .vidhab1 {
+  width: 40%;
+}
+
+@media (max-width: 992px) {
+  .pjlist {
+    display: none;
+  }
+  .PJcarac {
+    margin: 50px 20px 0px 20px;
+  }
+  .lineabiohab {
+    margin: 0px 20px;
+  }
+  .lineahabhab {
+    margin: 0px 80px;
+  }
+  .hab1 {
+    margin: 30px 20px !important;
+  }
+  .vidhab1 {
+    width: 60%;
+  }
+}
+
+.stock {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 90px 0px;
+}
+
+.stock .stockImg img {
+  height: 400px;
+}
+
+.stock .stockTexto {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stock .stockTexto h2 {
+  font-size: 60px;
+  font-family: 'valorant';
+}
+
+.stock .stockTexto p {
+  font-size: 30px;
+}
+
+.stock .stockTexto button {
+  padding: 10px;
+  border-bottom: 4px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+.stock{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 90px 0px;
+    .stockImg{
+    img{
+        height: 400px;
+    }
+    }
+    .stockTexto{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        h2{
+            font-size: 60px;
+            font-family: 'valorant';
+        }
+        p{
+            font-size: 30px;
+        }
+        button{
+            padding: 10px;
+            border-bottom: 4px;
+            font-size: 18px;
+        }
+    }
+}
