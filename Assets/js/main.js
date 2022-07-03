@@ -82,3 +82,21 @@ if (consulta = true){
 
 console.log(productosAgregados);
 console.log(productos);
+
+const mostrarStock = () =>{
+    const container = document.getElementById("stock_tabla");
+
+    productos.forEach(producto => {
+        const linea = document.createElement("tr");
+        linea.classList.add("prod");
+        linea.innerHTML = `<td>${producto.nombre}</td>
+                        <td>$${producto.valor}</td>
+                        <td>${producto.tipo}</td>
+                        <td>${producto.stock}</td>
+                        `
+        container.appendChild(linea);
+        
+    });
+};
+
+mostrarStock();

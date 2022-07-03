@@ -424,4 +424,22 @@ video::-webkit-media-controls {
   border-bottom: 4px;
   font-size: 18px;
 }
+
+.stock_contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+#stock_productos {
+  width: 60%;
+}
+
+#stock_productos table {
+  color: white;
+  text-align: center;
+}
+
+#stock_tabla {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

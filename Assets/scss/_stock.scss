@@ -32,3 +32,18 @@
         }
     }
 }
+
+.stock_contenedor{
+    display: flex;
+    justify-content: center;
+}
+#stock_productos{
+    width: 60%;
+    table{
+        color:white;
+        text-align: center;
+    }
+}
+#stock_tabla{
+    color: white;
+}
