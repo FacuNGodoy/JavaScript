@@ -19,73 +19,33 @@ productos.push(new Producto ('Buzo Sage', 8000, 'Ropa', 600));
 let solicitarConfirmacion = true;
 let productosAgregados = [];
 
-alert('Ingreso de un nuevo producto al sistema. En caso de no querer adicionar más productos o cancelarlo, escriba "ESC"')
+let miFormulario      = document.getElementById("formularioStock");
+miFormulario.addEventListener("submit", validarFormulario);
 
-do{
-    const nombre = prompt ('Ingrese el nombre del nuevo producto:');
-
-    let valor;
-    let tipo;
-    let stock;
-
-    if ((nombre=== 'ESC') || (nombre === 'esc')){
-        solicitarConfirmacion = false;
-        alert('No se agregaran mas productos.');
-    }else{
-        valor = parseInt (prompt('Ingrese el valor en $ARS:'));
-        if ((valor === 'ESC') || (valor=== 'esc')){
-            solicitarConfirmacion = false;
-            alert('No se agregaran mas productos.');
-        } else{
-            tipo = prompt('Ingrese la categoría:');
-            if ((tipo === 'esc') || (tipo === 'ESC')){
-                solicitarConfirmacion = false;
-                alert('No se agregaran mas productos.')
-            } else{
-                stock = parseInt ( prompt ('Ingrese el stock:'));
-                if ((stock === 'esc') || (stock === 'ESC')){
-                    solicitarConfirmacion = false;
-                    alert('No se agregaran mas productos.');
-                }
-            }
-        }
-    }
-
-    if (solicitarConfirmacion){
-        const nuevoProducto = new Producto (nombre, valor, tipo, stock);
-        productosAgregados.push(nuevoProducto);
-    }
-
-    if(solicitarConfirmacion){
-        solicitarConfirmacion = confirm('¿Quiere agregar otro producto?');
-    }
-
-} while (solicitarConfirmacion);
-
-
-
-
-let productoCompleto = (producto) => {
-    return "Ha ingresado: Nombre: " + producto.nombre + ", $" + producto.valor + ", Categoría: " + producto.tipo + ", Stock: " + producto.stock;
+function validarFormulario(e){
+     e.preventDefault();
+  
+    let formulario = e.target
+ 
+    let valor = parseInt(formulario.children[1].value)
+    let tipo = formulario.children[3].value
+    let stock = parseInt( formulario.children[5].value)
+    let nombre = formulario.children[7].value
+ 
+   
+  
+    const nuevoProducto = new Producto (nombre, valor, tipo, stock);
+    productosAgregados.push(nuevoProducto);
+     productos = productos.concat(productosAgregados);
+     productosAgregados = [];
+ 
+    console.log(productos)
+    mostrarStock();
 }
-
-alert(productosAgregados.map(item => productoCompleto(item)).join("\n"))
-
-let consulta = confirm('¿Confirma agregar estos productos al stock?');
-
-if (consulta = true){
-    productos = productos.concat(productosAgregados);
-    productosAgregados = [];
-}else{
-    productosAgregados = [];
-}
-
-console.log(productosAgregados);
-console.log(productos);
 
 const mostrarStock = () =>{
     const container = document.getElementById("stock_tabla");
-
+  
     productos.forEach(producto => {
         const linea = document.createElement("tr");
         linea.classList.add("prod");
@@ -98,5 +58,3 @@ const mostrarStock = () =>{
         
     });
 };
-
-mostrarStock();
