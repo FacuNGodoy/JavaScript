@@ -48,19 +48,25 @@
                 <p>Ingrese nombre, precio, categoría y el stock para agregar un nuevo producto al stock.</p>
             
                 <form id="formularioStock" style="display:flex ;flex-direction:column; gap:5px;">
-                  <label for="">VALOR</label>
-                  <input type="text">
-
-                  <label for="">CATEGORIA</label>
-                  <input type="text">
-
-                  <label for="">STOCK</label>
-                  <input type="text">
 
                   <label for="">NOMBRE</label>
-                  <input type="text">
+                  <input type="text" required>
 
-                  <input type="submit" value="Enviar">
+                  <label for="">PRECIO</label>
+                  <input type="number" required>
+
+                  <label for="">CATEGORIA</label>
+                    <select name="tipo">
+                      <option>Selección de categoría</option>
+                      <option value="Ropa">Ropa</option>
+                      <option value="Figuras">Figuras</option>
+                      <option value="Accesorios">Accesorios</option>
+                    </select>
+
+                  <label for="">STOCK</label>
+                  <input type="number" required>
+
+                  <input type="submit" value="Cargar Stock" id="contador">
               
                 </form>
             </div>
@@ -96,6 +102,5 @@
         </div>
       </footer>
       <script src="../js/main.js"></script>
-      <script src="../js/Stock.js"></script>
 </body>
 </html>

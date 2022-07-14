@@ -7,7 +7,7 @@
     margin: 90px 0px;
     .stockImg{
     img{
-        height: 400px;
+        height: 500px;
     }
     }
     .stockTexto{
@@ -25,12 +25,15 @@
         p{
             font-size: 30px;
         }
-        button{
-            padding: 10px;
-            border-bottom: 4px;
-            font-size: 18px;
-        }
     }
+}
+#formularioStock{
+    input{
+        margin:5px;
+    }
+}
+#contador{
+    padding: 10px;
 }
 
 .stock_contenedor{

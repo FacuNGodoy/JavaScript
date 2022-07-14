@@ -397,7 +397,7 @@ video::-webkit-media-controls {
 }
 
 .stock .stockImg img {
-  height: 400px;
+  height: 500px;
 }
 
 .stock .stockTexto {
@@ -419,10 +419,12 @@ video::-webkit-media-controls {
   font-size: 30px;
 }
 
-.stock .stockTexto button {
+#formularioStock input {
+  margin: 5px;
+}
+
+#contador {
   padding: 10px;
-  border-bottom: 4px;
-  font-size: 18px;
 }
 
 .stock_contenedor {

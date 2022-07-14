@@ -22,31 +22,20 @@ let productosAgregados = [];
 let miFormulario      = document.getElementById("formularioStock");
 miFormulario.addEventListener("submit", validarFormulario);
 
-function validarFormulario(e){
-     e.preventDefault();
-  
-    let formulario = e.target
- 
-    let valor = parseInt(formulario.children[1].value)
-    let tipo = formulario.children[3].value
-    let stock = parseInt( formulario.children[5].value)
-    let nombre = formulario.children[7].value
- 
-   
-  
-    const nuevoProducto = new Producto (nombre, valor, tipo, stock);
-    productosAgregados.push(nuevoProducto);
-     productos = productos.concat(productosAgregados);
-     productosAgregados = [];
- 
-    console.log(productos)
-    mostrarStock();
+//FUNCIONES
+
+traerLocal = () => {
+    for (let i = 0; i < localStorage.length; i++) {
+        let clave = localStorage.key(i);
+            
+        productosAgregados.push(JSON.parse(localStorage.getItem(clave)));
+    }
 }
 
 const mostrarStock = () =>{
     const container = document.getElementById("stock_tabla");
   
-    productos.forEach(producto => {
+    productosAgregados.forEach(producto => {
         const linea = document.createElement("tr");
         linea.classList.add("prod");
         linea.innerHTML = `<td>${producto.nombre}</td>
@@ -57,4 +46,65 @@ const mostrarStock = () =>{
         container.appendChild(linea);
         
     });
+    productosAgregados = [];
 };
+
+agregarNuevo = () => {
+    const container = document.getElementById("stock_tabla");
+  
+    productosAgregados.forEach(producto => {
+        const linea = document.createElement("tr");
+        linea.classList.add("prod");
+        linea.innerHTML = `<td>${producto.nombre}</td>
+                        <td>$${producto.valor}</td>
+                        <td>${producto.tipo}</td>
+                        <td>${producto.stock}</td>
+                        `
+        container.appendChild(linea);
+        
+    });
+    productosAgregados = [];
+};
+
+//GUARDAR EN LOCALSTORAGE
+
+const guardarLocal = (clave, valor) => {
+    localStorage.setItem(clave, valor)
+};
+
+for (const product of productos) {
+    guardarLocal(product.nombre, JSON.stringify(product))
+}
+
+
+traerLocal();
+
+mostrarStock();
+
+function validarFormulario(e){
+     e.preventDefault();
+  
+    let formulario = e.target
+ 
+    let nombre = formulario.children[1].value
+    let valor = parseInt(formulario.children[3].value)
+    let tipo = formulario.children[5].value
+    let stock = parseInt( formulario.children[7].value)
+ 
+  
+    const nuevoProducto = new Producto (nombre, valor, tipo, stock);
+
+    productosAgregados.push(nuevoProducto);
+
+    const guardarLocal = (clave, valor) => {
+        localStorage.setItem(clave, valor)
+    };
+
+    for (const product of productosAgregados) {
+        guardarLocal(product.nombre, JSON.stringify(product))
+    }
+    agregarNuevo() ;
+
+    formulario.reset();
+}
+
