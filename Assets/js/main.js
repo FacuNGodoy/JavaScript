@@ -83,23 +83,26 @@ traerLocal();
 mostrarStock();
 
 function validarFormulario(e){
-     e.preventDefault();
-  
+    e.preventDefault();
+    
     let formulario = e.target
- 
+
+    // cartel (formulario); 
+
     let nombre = formulario.children[1].value
     let valor = parseInt(formulario.children[3].value)
     let tipo = formulario.children[5].value
     let stock = parseInt( formulario.children[7].value)
- 
+    
     //Alert Stock
 
     const btn = document.getElementById("contador");
     btn.addEventListener('click', ()=>{
-        if ((formulario.children[1].value === "") || (formulario.children[3].value === "") || (formulario.children[5].value === "") || (formulario.children[7].value === "")){
+        if ((nombre === "") || (valor === "") || (tipo === "") || (stock === "")){
             formulario.reset();
-            console.log("funciono");
-        } else if ((formulario.children[3].value < 0)||(formulario.children[7].value < 0)){
+            console.log("estoy vacio");
+            
+        } else if ((valor = 2)||(stock = 2)){
             swal({
                 icon: 'error',
                 title: 'Oops...',
@@ -107,49 +110,32 @@ function validarFormulario(e){
                 timer: 2500,
                 buttons: false,
             })
+            console.log("error");
 
             formulario.reset();
         } else{
+            const nuevoProducto = new Producto (nombre, valor, tipo, stock);
+        
+            productosAgregados.push(nuevoProducto);
+
             swal({
                 title: 'Agregado',
                 text: 'Tu producto se ha añadido al stock!',
                 icon : 'success',
                 buttons: false,
                 timer: 1500,
-            })}
-    });
-//     ((formulario.children[1].value === "") || (formulario.children[3].value === "") || (formulario.children[5].value === "") || (formulario.children[7].value === "")) ?
-//         // formulario.reset()
-//         console.log("funciono")
-//     : (((formulario.children[3].value < 0)||(formulario.children[7].value < 0)) ?
-//         // formulario.reset()
-//         swal({
-//             icon: 'error',
-//             title: 'Oops...',
-//             text: 'El valor no puede ser negativo!',
-//             timer: 2500,
-//             buttons: false,
-//         })
+            })
+            
+        
+            for (const product of productosAgregados) {
+                guardarLocal(product.nombre, JSON.stringify(product))
+            }
+            agregarNuevo() ;
+        
+            formulario.reset();
+            
+    }});
 
-//     : 
-//         swal({
-//             title: 'Agregado',
-//             text: 'Tu producto se ha añadido al stock!',
-//             icon : 'success',
-//             buttons: false,
-//             timer: 1500,
-//         }))
-// });
 
-    const nuevoProducto = new Producto (nombre, valor, tipo, stock);
-
-    productosAgregados.push(nuevoProducto);
-
-    for (const product of productosAgregados) {
-        guardarLocal(product.nombre, JSON.stringify(product))
-    }
-    agregarNuevo() ;
-
-    formulario.reset();
 };
 

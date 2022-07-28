@@ -2,30 +2,26 @@
   font-family: "valorant";
   src: url(../fonts/Valorant_Font.ttf);
 }
-
 @font-face {
   font-family: "valorant";
   src: url(../fonts/Valorant_Font.ttf);
 }
-
 .navbar {
-  background-color: #121826 !important;
+  background-color: rgb(18, 24, 38) !important;
   color: white;
 }
-
 .navbar .navbar-nav {
   font-family: "valorant";
   color: white;
 }
 
 .presentacion {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 18px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 30px 60px;
   border-radius: 30px;
 }
-
 .presentacion .desc {
   margin-top: 2px;
   padding-bottom: 150px;
@@ -38,7 +34,7 @@
   align-items: center;
   background-color: rgba(128, 128, 128, 0.669);
   height: 700px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .contacto {
@@ -64,7 +60,7 @@ select {
 }
 
 .contenedor {
-  background-color: #121826;
+  background-color: rgb(18, 24, 38);
 }
 
 * {
@@ -76,12 +72,10 @@ select {
   font-family: "valorant";
   src: url(../fonts/Valorant_Font.ttf);
 }
-
 .pie {
-  background-color: #022136 !important;
+  background-color: rgb(2, 33, 54) !important;
   color: white;
 }
-
 .pie h6 {
   font-size: 12px;
 }
@@ -89,15 +83,14 @@ select {
 .menuTarjetas {
   width: 300px;
   border-style: groove;
-  border-color: #e4dddd;
+  border-color: rgb(228, 221, 221);
   border-width: 5px;
   transition: 2s;
   padding: 0;
   background: linear-gradient(to bottom, #121826 0%, #121826 65%, #D0344D 100%);
 }
-
 .menuTarjetas p {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .menuTarjetas:hover {
@@ -130,23 +123,86 @@ select {
 .tarjetaShop {
   width: 300px;
   border-style: groove;
-  border-color: #e4dddd;
+  border-color: rgb(228, 221, 221);
   border-width: 5px;
   transition: 2s;
   padding: 0;
   background: linear-gradient(to bottom, #121826 0%, #121826 65%, #D0344D 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tarjetaShop p {
+  color: rgb(255, 255, 255);
+}
+.tarjetaShop button {
+  transition: 2s;
+  padding: 5px 15px 5px 15px;
+}
+.tarjetaShop button:hover {
+  transform: scale(1.04);
+  background-color: #198754;
 }
 
-.tarjetaShop p {
+.subMenu {
+  display: flex;
+}
+
+.table {
   color: white;
 }
 
-.tarjetaShop button {
-  transition: 2s;
+.itemCarrTotal {
+  color: white;
 }
 
-.tarjetaShop button:hover {
-  transform: scale(1.04);
+.btnComprar {
+  color: white;
+}
+
+.carrito {
+  min-height: 70vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tarjeta-precio {
+  color: white;
+}
+
+.table__productos {
+  display: flex;
+}
+
+.table__productos > img {
+  width: 9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.asd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
 }
 
 .video_ocultarSm {
@@ -161,29 +217,27 @@ video::-webkit-media-controls {
   font-family: "valorant";
   src: url(../fonts/Valorant_Font.ttf);
 }
-
 .pie {
-  background-color: #022136;
+  background-color: rgb(2, 33, 54);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 .pie h3 {
   font-size: 30px;
   letter-spacing: 0.8px;
   word-spacing: 0px;
   font-weight: 700;
-  text-decoration: underline solid #e0e0e0;
+  -webkit-text-decoration: underline solid rgb(224, 224, 224);
+          text-decoration: underline solid rgb(224, 224, 224);
   font-style: italic;
   font-variant: small-caps;
   text-transform: none;
 }
-
 .pie .seccionRedes {
   display: flex;
   flex-direction: row;
@@ -191,12 +245,10 @@ video::-webkit-media-controls {
   justify-content: center;
   gap: 15px;
 }
-
 .pie .texto_redes {
   margin: 2px;
   font-size: x-large;
 }
-
 .pie .seccionRedes a {
   padding: 2px;
 }
@@ -228,7 +280,6 @@ video::-webkit-media-controls {
     font-size: 24px;
   }
 }
-
 @media (min-width: 1200px) {
   .menuMd {
     height: 600px;
@@ -249,12 +300,10 @@ video::-webkit-media-controls {
     height: 400px;
   }
 }
-
 @font-face {
   font-family: "valorant";
   src: url(../fonts/Valorant_Font.ttf);
 }
-
 .PJcarac {
   display: flex;
   flex-direction: row;
@@ -276,12 +325,11 @@ video::-webkit-media-controls {
 
 .PJbio {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   width: 500px;
 }
-
 .PJbio h5 {
   font-size: 40px;
 }
@@ -292,6 +340,7 @@ video::-webkit-media-controls {
 }
 
 .pj {
+  position: -webkit-sticky;
   position: sticky;
   top: 180px;
 }
@@ -302,7 +351,6 @@ video::-webkit-media-controls {
   position: absolute;
   width: 200px;
 }
-
 .pjlist ul {
   list-style: none;
   color: white;
@@ -313,16 +361,13 @@ video::-webkit-media-controls {
   margin: 20px;
   transition: 1s;
 }
-
 .pjlist ul li {
   padding: 20px 0px;
 }
-
 .pjlist ul li a {
   text-decoration: none;
   color: white;
 }
-
 .pjlist li:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
@@ -342,7 +387,6 @@ video::-webkit-media-controls {
   display: flex;
   flex-direction: column;
 }
-
 .habs .hab1 {
   color: white;
   display: flex;
@@ -352,7 +396,6 @@ video::-webkit-media-controls {
   justify-content: space-around;
   margin: 40px 200px;
 }
-
 .habs .habexp {
   display: flex;
   flex-wrap: wrap;
@@ -361,7 +404,6 @@ video::-webkit-media-controls {
   justify-content: center;
   width: 50%;
 }
-
 .habs .vidhab1 {
   width: 40%;
 }
@@ -385,63 +427,4 @@ video::-webkit-media-controls {
   .vidhab1 {
     width: 60%;
   }
-}
-
-.stock {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 90px 0px;
-}
-
-.stock .stockImg img {
-  height: 500px;
-}
-
-.stock .stockTexto {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-.stock .stockTexto h2 {
-  font-size: 60px;
-  font-family: 'valorant';
-}
-
-.stock .stockTexto p {
-  font-size: 30px;
-}
-
-#formularioStock input {
-  margin: 5px;
-}
-
-#contador {
-  padding: 10px;
-}
-
-.stock_contenedor {
-  display: flex;
-  justify-content: center;
-}
-
-#stock_productos {
-  width: 60%;
-}
-
-#stock_productos table {
-  color: white;
-  text-align: center;
-}
-
-#stock_tabla {
-  color: white;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

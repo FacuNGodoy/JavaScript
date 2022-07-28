@@ -1,83 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Izi Way Shop, lleva en tu remera a tu main; tene una figura de tus personajes favoritos y mas.">
-    <meta name="keywords" content="IZI WAY, Gamer, Valorant, Shooter, juego, riot, riotgames, estrategia, Esports, Shop, Merchandising">
-    <title>Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Izi Way Shop, lleva en tu remera a tu main; tene una figura de tus personajes favoritos y mas.">
+  <meta name="keywords"
+    content="IZI WAY, Gamer, Valorant, Shooter, juego, riot, riotgames, estrategia, Esports, Shop, Merchandising">
+  <title>Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="contenedor">
-    <header>
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../../index.html"><img src="../img/Logo70x70-min.png" alt="Izi Way logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Characters.html">Characters</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Maps.html">Maps</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Stock.html">Stock</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div class="menuMd_SH">
-            <img class="img_menu img-fluid" src="../img/separadorMerchandising-min.jpg" alt="Shop Izi Way" width="100%">
-          </div>
-    </header>
-    <main>
-        <Section class="secciones row justify-content-evenly mb-4">
-            <div class="tarjetaShop mt-4 sizeSm d-flex flex-column align-items-center">
-                <h3 class="tarjetaTitulo">Remera</h3>
-                <p>Consultar talle y color.</p>
-                <img class="img-fluid" src="../img/merchandising_remera1 (1)-min.png" alt="Remera phoenix Valorant">
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="tarjetaShop mt-4 sizeSm d-flex flex-column align-items-center">
-                <h3 class="tarjetaTitulo">Figura Phoenix</h3>
-                <p>Figura de resina de 30cm de altura.</p>
-                <img class="img-fluid" src="../img/merchandising_figura1-min.png" alt="Figura phoenix resina Valorant">
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="tarjetaShop mt-4 sizeSm d-flex flex-column align-items-center">
-                <h3 class="tarjetaTitulo">Buzo Sage</h3>
-                <p>Color unico. Consultar talle.</p>
-                <img class="img-fluid" src="../img/ropa3-min.png" alt="Buzo sage violeta Valorant">
-                <button class="comprar">Comprar</button>
-            </div>
-       </Section>
-    </main>
-    <footer>
-      <div class="pie">
-             <h3 class="texto_contacto">Elige jugar con nosotros</h3>
-        <div class="seccionRedes" >
-             <p class="texto_redes">Ingresá a nuestras redes</p>
-             <a class="nav-link seccion_link"  href="https://www.instagram.com/valorantlatam/?hl=es-la"><i class="fab fa-instagram redes-insta"></i></a>
+  <header>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../img/Logo70x70-min.png" alt="Izi Way logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Characters.html">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Maps.html">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-              <p class="texto_contacto">
-                    © Copyright Izi Way  2022 | Diseñador WEB: Facundo Nahuel Godoy 
-              </p>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </nav>
+    <div class="menuMd_SH">
+      <img class="img_menu img-fluid" src="../img/separadorMerchandising-min.jpg" alt="Shop Izi Way" width="100%">
+    </div>
+  </header>
+  <main>
+    <section class="subMenu container-fluid top-0" position-sticky">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">Shop</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+            role="tab" aria-controls="pills-profile" aria-selected="false">Carrito</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+            role="tab" aria-controls="pills-contact" aria-selected="false">Shop2</a>
+        </li>
+      </ul>
+    </section>
+      <div class="shop tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+          tabindex="0">
+          <!-- <Section class="secciones row justify-content-evenly mb-4">
+            <div class="card tarjetaShop mt-4 sizeSm d-flex flex-column align-items-center">
+              <h3 class="card-title tarjetaTitulo">Remera</h3>
+              <p>Consultar talle y color.</p>
+              <img class="card-img img-fluid" src="../img/merchandising_remera1 (1)-min.png" alt="Remera phoenix Valorant">
+              <h5 class="tarjeta-precio"><span class="precio">$ 4500</span></h5>
+              <button class="botonComprar button">Añadir al carrito</button>
+            </div>
+            <div class="card tarjetaShop mt-4 sizeSm d-flex flex-column align-items-center">
+              <h3 class="card-title tarjetaTitulo">Figura Phoenix</h3>
+              <p>Figura de resina de 30cm de altura.</p>
+              <img class="card-img img-fluid" src="../img/merchandising_figura1-min.png" alt="Figura phoenix resina Valorant">
+              <h5 class="tarjeta-precio"><span class="precio">$ 15000</span></h5>
+              <button class="botonComprar button">Añadir al carrito</button>
+            </div>
+            <div class="card tarjetaShop mt-4 sizeSm d-flex flex-column align-items-center">
+              <h3 class="card-title tarjetaTitulo">Buzo Sage</h3>
+              <p>Color unico. Consultar talle.</p>
+              <img class="card-img img-fluid" src="../img/ropa3-min.png" alt="Buzo sage violeta Valorant">
+              <h5 class="tarjeta-precio"><span class="precio">$ 8000</span></h5>
+              <button class="botonComprar button">Añadir al carrito</button>
+            </div>
+          </Section> -->
+        </div>
+        <div class="carrito tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Productos</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+          </table>
+          <br><br>
+          <div class="row mx-4">
+            <div class="col">
+              <h3 class="itemCarrTotal"></h3>
+            </div>
+            <div class="col d-flex justify-content-end">
+              <button class="btnComprar btn btn-success">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-asd tab-pane fade producto-contenedor" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          <section class="asd"></section>
+        </div>
+      </div>
+    
+  </main>
+  <footer>
+    <div class="pie">
+      <h3 class="texto_contacto">Elige jugar con nosotros</h3>
+      <div class="seccionRedes">
+        <p class="texto_redes">Ingresá a nuestras redes</p>
+        <a class="nav-link seccion_link" href="https://www.instagram.com/valorantlatam/?hl=es-la"><i
+            class="fab fa-instagram redes-insta"></i></a>
+      </div>
+      <p class="texto_contacto">
+        © Copyright Izi Way 2022 | Diseñador WEB: Facundo Nahuel Godoy
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="../js/shop.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
+
 </html>

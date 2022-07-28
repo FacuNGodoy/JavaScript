@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Remera2",
+        "desc": "Consultar talle y color",
+        "img": "../img/merchandising_remera1 (1)-min.png",
+        "precio": 4500
+    },
+    
+    {
+        "nombre": "Figura Phoenix2",
+        "desc": "Figura de resina de 30cm de altura.",
+        "img": "../img/merchandising_figura1-min.png",
+        "precio": 4500
+    },
+
+    {
+        "nombre": "Buzo Sage2",
+        "desc": "Color unico. Consultar talle.",
+        "img": "../img/ropa3-min.png",
+        "precio": 8000
+    }
+]
