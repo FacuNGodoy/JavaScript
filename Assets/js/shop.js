@@ -1,17 +1,11 @@
-
-const Clickbutton = document.querySelectorAll('.button')
 const tbody = document.querySelector('.tbody')
 let carrito = [];
-
-Clickbutton.forEach(button => {
-    button.addEventListener('click', addtoCarritoItem)
-});
 
 //Agregar al carrito
 
 function addtoCarritoItem(e) {
-    const button = e.target
-    const item = button.closest('.card')
+    const button = e.target;
+    const item = button.closest('.card');
     const itemTitle = item.querySelector('.card-title').textContent;
     const itemPrice = item.querySelector('.precio').textContent;
     const itemImg = item.querySelector('.card-img').src;
@@ -49,7 +43,7 @@ function addItemCarrito (newItem){
             return null;
         }
     }
-
+    
     carrito.push(newItem)
     renderCarrito()
 }
@@ -64,20 +58,20 @@ function renderCarrito(){
         <th scope="row">1</th>
         <td class="table__productos">
         <img src=${item.img}>
-                <h6 class="title">${item.title}</h6>
-                </td>
+        <h6 class="title">${item.title}</h6>
+        </td>
                 <td class="table__precio">
                 <p>${item.precio}</p>
                 </td>
                 <td class="table__cantidad">
                 <input type="number" min="1" value=${item.cantidad} class="cantCarrito">
                 <button  class="delete btn btn-danger">x</button>
-            </td>
-            `
-        tr.innerHTML = Content;
-        tbody.append(tr)
-        
-        tr.querySelector(".delete").addEventListener('click', removeItemCarrito)
+                </td>
+                `
+                tr.innerHTML = Content;
+                tbody.append(tr)
+                
+                tr.querySelector(".delete").addEventListener('click', removeItemCarrito)
         tr.querySelector('.cantCarrito').addEventListener('change', sumaCantidad)
     })
     carritoTotal();
@@ -91,7 +85,7 @@ function carritoTotal (){
         const precio = Number(item.precio.replace("$", ''))
         total = total + precio*item.cantidad
     })
-
+    
     itemCarTotal.innerHTML = `Total $${total}`;
     addLocalStorage();
 }
@@ -149,17 +143,13 @@ window.onload = function(){
     }
 }
 
-const API = "../js/data.json";
-
-
-
-//------
+const API = "../data/data.json";
 
 const asd = document.querySelector('.asd')
 
 const productosController = async () =>{
     
-        try{
+    try{
         const response = await fetch(API);
         const data = await response.json();
         return data;
@@ -171,18 +161,18 @@ const productosController = async () =>{
 
 const mostrarProductos = async () => {
         asd.innerHTML='';
-    
+        
         const productos = await productosController();
     
-    productos.forEach(producto =>{
-        const div = document.createElement('div');
-        div.classList.add('card')
-        const Content = `
+        productos.forEach(producto =>{
+            const div = document.createElement('div');
+            div.classList.add('card')
+            const Content = `
             <div class= tarjetaShop mt-4 sizeSm>
                 <h3 class="card-title tarjetaTitulo">${producto.nombre}</h3>
 
                 <p>${producto.desc}</p>
-
+                
                 <img class="card-img img-fluid" src="${producto.img}" alt="Buzo sage violeta Valorant">
                 
                 <h5 class="tarjeta-precio"><span class="precio">$ ${producto.precio}</span></h5>
@@ -190,8 +180,14 @@ const mostrarProductos = async () => {
                 <button  class="botonComprar miboton button">Añadir al carrito</button>
             </div>
             `
-        div.innerHTML = Content;
+            div.innerHTML = Content;
         asd.appendChild(div);
+        
+        const Clickbutton = document.querySelectorAll('.button')
+
+        Clickbutton.forEach(button => {
+            button.addEventListener('click', addtoCarritoItem)
+        });
 
     });
 }
